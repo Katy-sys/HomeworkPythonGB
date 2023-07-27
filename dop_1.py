@@ -12,7 +12,7 @@
 # делим исходное число на 2 и записывам остаток от деления в список
 def convert_to (n: int, nota: int) -> list:
     list_n = []
-    while n_ten >= nota:
+    while n >= nota:
         list_n.append(n % nota)
         n = n//nota
     list_n.append(n % nota)
@@ -46,5 +46,5 @@ fff = to_st(ff)
 print(fff)
 
 # проверка решения
-# print(f"Двоичное число: {bin(n_ten)}")
-# print("Восьмеричное число: %s"  %  oct(n_ten))
+print(f"Двоичное число: {bin(n_ten)}")
+print("Восьмеричное число: %s"  %  oct(n_ten))
